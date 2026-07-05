@@ -6,4 +6,7 @@ export interface Project {
   image?: string;
   viewUrl?: string;
   codeUrl: string;
+  detail: string;
+  challenge: string;
+  bestPractices: string[];
 }
