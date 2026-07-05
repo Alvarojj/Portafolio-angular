@@ -50,6 +50,7 @@ export class TopAppBarComponent {
     { href: '#stack', label: 'TECNOLOGÍAS' },
     { href: '#projects', label: 'PROYECTOS' },
     { href: '#experience', label: 'EXPERIENCIA' },
-    { href: '#contact', label: 'CONTACTO' },
+    { href: '/blog', label: 'BLOG' },
+    //{ href: '#contact', label: 'CONTACTO' }, 
   ];
 }
