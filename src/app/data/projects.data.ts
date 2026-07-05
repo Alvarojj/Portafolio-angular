@@ -15,11 +15,30 @@ export const PROJECTS: Project[] = [
     challenge:
       'Diseñar una arquitectura de microservicios con un API Gateway para coordinar servicios de autenticación y gestión de tareas seguros, manteniendo la consistencia de datos y la comunicación perfecta a través de servicios distribuidos.',
     bestPractices: [
-      'principios SOLID',
-      'Diseño de API RESTful',
-      'Autenticación con JWT',
-      'Patrón de microservicios',
-      'Diseño responsive con Angular',
+      {
+        title: 'Principios SOLID',
+        description:
+          'Diseño orientado al dominio con separación clara entre lógica de negocio e infraestructura.',
+      },
+      {
+        title: 'API RESTful',
+        description:
+          'Endpoints diseñados siguiendo los estándares REST con versionado y manejo de errores consistente.',
+      },
+      {
+        title: 'JWT Seguro',
+        description:
+          'Tokens con expiración y renovación automática usando refresh tokens.',
+      },
+      {
+        title: 'Patrón Gateway',
+        description:
+          'Punto único de entrada con balanceo de carga y ruteo inteligente a microservicios.',
+      },
     ],
+    architectureImage: 'assets/arquitecura del week planner.png',
+    architectureCaption:
+      'Diagrama que ilustra el flujo desde el API Gateway hasta la capa de persistencia de PostgreSQL.',
+    videoUrl: '#',
   },
 ];
