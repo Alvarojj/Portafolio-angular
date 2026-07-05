@@ -24,10 +24,10 @@ import { Project } from '../../models/project.interface';
       </div>
       <div class="flex gap-4 mt-auto">
         <a [routerLink]="['/projects', project().id]" class="font-label-mono text-label-mono text-black dark:text-white border-b border-black dark:border-white pb-1 hover:opacity-70 transition-opacity cursor-pointer">
-          VIEW PROJECT
+          DETALLE DEL PROYECTO
         </a>
         <a class="font-label-mono text-label-mono text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" href="{{project().codeUrl}}" target="_Blank">
-          CODE
+          CÓDIGO
         </a>
       </div>
     </article>

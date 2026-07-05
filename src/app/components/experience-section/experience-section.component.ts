@@ -9,8 +9,8 @@ import { Experience } from '../../models/experience.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [SectionTitleComponent, ExperienceItemComponent],
   template: `
-    <section class="flex flex-col gap-margin-md" id="experience">
-      <app-section-title title="Experience" />
+    <section class="pb-section-gap flex flex-col gap-margin-md" id="experience">
+      <app-section-title title="Experiencia Profesional" />
       <div class="flex flex-col gap-12">
         @for (exp of experiences(); track exp.id) {
           <app-experience-item [experience]="exp" />

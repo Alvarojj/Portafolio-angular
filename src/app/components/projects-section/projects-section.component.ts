@@ -9,8 +9,8 @@ import { Project } from '../../models/project.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [SectionTitleComponent, ProjectCardComponent],
   template: `
-    <section class="flex flex-col gap-margin-md" id="projects">
-      <app-section-title title="Featured Projects" />
+    <section class="pb-section-gap flex flex-col gap-margin-md" id="projects">
+      <app-section-title title="Proyectos Destacados" />
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-element-gap">
         @for (project of projects(); track project.id) {
           <app-project-card [project]="project" />

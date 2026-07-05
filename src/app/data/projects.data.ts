@@ -5,21 +5,21 @@ export const PROJECTS: Project[] = [
     id: 'week-planner',
     title: 'WEEK PLANER',
     description:
-      'Full-stack application for weekly planning and task management. Implements a microservices architecture with an API Gateway, Authentication Service, and Task Service, using Angular, Spring Boot, and PostgreSQL.',
+      'Aplicación full-stack para la planificación semanal y la gestión de tareas. Implementa una arquitectura de microservicios con API Gateway, servicio de autenticación y servicio de tareas, utilizando Angular, Spring Boot y PostgreSQL.',
     techs: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL', 'JWT', 'Microservices'],
     image: 'assets/GymVirtual.jpg',
     viewUrl: '#',
     codeUrl: 'https://github.com/aejimenez19/WeekPlanner',
     detail:
-      'A comprehensive full-stack weekly planner that empowers users to organize tasks, set priorities, and track progress efficiently. The system features secure user authentication, complete task CRUD operations, and a responsive Angular frontend powered by a Spring Boot backend with PostgreSQL persistence.',
+      'Una planificación semanal full-stack integral que empodera a los usuarios para organizar tareas, establecer prioridades y rastrear el progreso de manera eficiente. El sistema cuenta con autenticación segura de usuarios, operaciones completas de CRUD de tareas y un frontend Angular responsive impulsado por un backend Spring Boot con persistencia en PostgreSQL.',
     challenge:
-      'Designing a microservices architecture with an API Gateway to coordinate secure authentication and task management services, while maintaining data consistency and seamless communication across distributed services.',
+      'Diseñar una arquitectura de microservicios con un API Gateway para coordinar servicios de autenticación y gestión de tareas seguros, manteniendo la consistencia de datos y la comunicación perfecta a través de servicios distribuidos.',
     bestPractices: [
-      'SOLID Principles',
-      'RESTful API Design',
-      'JWT Authentication',
-      'Microservices Pattern',
-      'Responsive Design',
+      'principios SOLID',
+      'Diseño de API RESTful',
+      'Autenticación con JWT',
+      'Patrón de microservicios',
+      'Diseño responsive con Angular',
     ],
   },
 ];

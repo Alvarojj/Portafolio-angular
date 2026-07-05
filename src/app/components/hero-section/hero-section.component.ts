@@ -5,18 +5,18 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <section class="pt-section-gap flex flex-col gap-element-gap items-start max-w-3xl" id="about">
+    <section class="pb-section-gap flex flex-col gap-element-gap items-start max-w-3xl" id="about">
       <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-black dark:text-white">
-        Backend developer.
+        Desarrollador Backend
       </h1>
       <p class="font-body-lg text-body-lg text-black dark:text-white max-w-2xl">
-        Rassionate engineer specializing in robust backend architectures and scalable systems built with <span class="text-black dark:text-white font-bold"> Java and Spring Boot. </span>Dedicated to writing clean, maintainable code and solving complex technical challenges with elegant solutions.      </p>
+        Desarrollador Backend especializado en construir sistemas robustos y escalables que soportan altos volúmenes de datos, utilizando <span class="text-black dark:text-white font-bold"> Java, Spring Boot </span> y principios de arquitectura limpia.</p>
       <div class="flex gap-4 mt-8">
         <a class="button-primary font-label-mono text-label-mono" href="#projects">
-          VIEW WORK
+          VER TRABAJO
         </a>
         <a class="button-secondary font-label-mono text-label-mono" href="#contact">
-          GET IN TOUCH
+          PONERSE EN CONTACTO
         </a>
       </div>
     </section>

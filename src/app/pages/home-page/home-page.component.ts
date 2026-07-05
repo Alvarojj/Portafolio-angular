@@ -17,14 +17,13 @@ import { EXPERIENCES } from '../../data/experience.data';
     ProjectsSectionComponent,
     StackSectionComponent,
     ExperienceSectionComponent,
-    ContactSectionComponent,
   ],
   template: `
     <app-hero-section />
     <app-stack-section [techStack]="techStack" />
     <app-projects-section [projects]="projects" />
     <app-experience-section [experiences]="experiences" />
-    <app-contact-section />
+    <!-- <app-contact-section /> -->
   `,
 })
 export class HomePageComponent {

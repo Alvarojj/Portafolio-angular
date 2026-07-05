@@ -45,11 +45,11 @@ export class TopAppBarComponent {
   themeService = inject(ThemeService);
 
   navLinks = [
-    { href: '#home', label: 'HOME' },
-    { href: '#about', label: 'ABOUT ME' },
-    { href: '#stack', label: 'STACK' },
-    { href: '#projects', label: 'PROJECTS' },
-    { href: '#experience', label: 'EXPERIENCE' },
-    { href: '#contact', label: 'CONTACT' },
+    { href: '#home', label: 'INICIO' },
+    { href: '#about', label: 'SOBRE MÍ' },
+    { href: '#stack', label: 'TECNOLOGÍAS' },
+    { href: '#projects', label: 'PROYECTOS' },
+    { href: '#experience', label: 'EXPERIENCIA' },
+    { href: '#contact', label: 'CONTACTO' },
   ];
 }

@@ -5,11 +5,11 @@ export const EXPERIENCES: Experience[] = [
     id: 'carvajal',
     period: 'Nov 2022 — Nov 2025',
     company: 'CARVAJAL TECNOLOGÍA & SERVICIOS',
-    role: 'Professional Development Engineer',
+    role: 'Ingeriero desarrollador de software profesional',
     achievements: [
-      'Develop microservices with Java and Spring Boot within a distributed architecture, processing thousands of purchase orders daily between large retail chains and suppliers.',
-      'I designed and implemented REST APIs, incorporating pagination and dynamic filters to optimize access and efficient data handling.',
-      'Optimized queries, reducing report generation time from several minutes to less than 3 seconds.',
+      'Desarrollare microservicios con Java y Spring Boot en una arquitectura distribuida, procesando miles de órdenes de compra diarias entre grandes cadenas minoristas y proveedores.',
+      'Diseñé e implementé APIs REST, incorporando paginación y filtros dinámicos para optimizar el acceso y el manejo eficiente de los datos.',
+      'Optimicé consultas, reduciendo el tiempo de generación de reportes de varios minutos a menos de 3 segundos.',
     ],
   },
 ];
