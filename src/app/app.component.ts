@@ -13,7 +13,7 @@ import { FooterComponent } from './components/footer/footer.component'
     FooterComponent,
   ],
   template: `
-    <div class="flex flex-col min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+    <div class="flex flex-col min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <header>
         <app-top-app-bar />
       </header>
