@@ -3,7 +3,7 @@ import { Project } from '../models/project.interface';
 export const PROJECTS: Project[] = [
   {
   id: 'AJ-STUDIO-ecommerce',
-  title: 'AJ STUDIO E-COMMERCE',
+  title: 'AJ STUDIO E-COMMERCE (En desarrollo)',
   description:
     'Plataforma e-commerce full-stack en desarrollo para una empresa de sublimación y productos personalizados. Diseñada con una arquitectura de microservicios utilizando API Gateway, autenticación centralizada y servicios independientes para la gestión del catálogo y los pedidos.',
 
