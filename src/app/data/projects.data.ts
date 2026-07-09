@@ -2,43 +2,61 @@ import { Project } from '../models/project.interface';
 
 export const PROJECTS: Project[] = [
   {
-    id: 'week-planner',
-    title: 'WEEK PLANER',
-    description:
-      'Aplicación full-stack para la planificación semanal y la gestión de tareas. Implementa una arquitectura de microservicios con API Gateway, servicio de autenticación y servicio de tareas, utilizando Angular, Spring Boot y PostgreSQL.',
-    techs: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL', 'JWT', 'Microservices'],
-    image: 'assets/GymVirtual.jpg',
-    viewUrl: '#',
-    codeUrl: 'https://github.com/aejimenez19/WeekPlanner',
-    detail:
-      'Una planificación semanal full-stack integral que empodera a los usuarios para organizar tareas, establecer prioridades y rastrear el progreso de manera eficiente. El sistema cuenta con autenticación segura de usuarios, operaciones completas de CRUD de tareas y un frontend Angular responsive impulsado por un backend Spring Boot con persistencia en PostgreSQL.',
-    challenge:
-      'Diseñar una arquitectura de microservicios con un API Gateway para coordinar servicios de autenticación y gestión de tareas seguros, manteniendo la consistencia de datos y la comunicación perfecta a través de servicios distribuidos.',
-    bestPractices: [
-      {
-        title: 'Principios SOLID',
-        description:
-          'Diseño orientado al dominio con separación clara entre lógica de negocio e infraestructura.',
-      },
-      {
-        title: 'API RESTful',
-        description:
-          'Endpoints diseñados siguiendo los estándares REST con versionado y manejo de errores consistente.',
-      },
-      {
-        title: 'JWT Seguro',
-        description:
-          'Tokens con expiración y renovación automática usando refresh tokens.',
-      },
-      {
-        title: 'Patrón Gateway',
-        description:
-          'Punto único de entrada con balanceo de carga y ruteo inteligente a microservicios.',
-      },
-    ],
-    architectureImage: 'assets/arquitecura del week planner.png',
-    architectureCaption:
-      'Diagrama que ilustra el flujo desde el API Gateway hasta la capa de persistencia de PostgreSQL.',
-    videoUrl: '#',
-  },
+  id: 'AJ-STUDIO-ecommerce',
+  title: 'AJ STUDIO E-COMMERCE',
+  description:
+    'Plataforma e-commerce full-stack en desarrollo para una empresa de sublimación y productos personalizados. Diseñada con una arquitectura de microservicios utilizando API Gateway, autenticación centralizada y servicios independientes para la gestión del catálogo y los pedidos.',
+
+  techs: [
+    'Angular',
+    'Java',
+    'Spring Boot',
+    'Spring Cloud',
+    'PostgreSQL',
+    'JWT',
+    'Microservices'
+  ],
+
+  image: 'assets/aj-studio-ecommerce.jpg',
+
+  viewUrl: '#',
+
+  codeUrl: 'https://github.com/aejimenez19/aj-studio-ecommerce',
+
+  detail:
+    'Proyecto en desarrollo orientado a digitalizar el proceso de venta de una empresa de sublimación. La aplicación permitirá administrar productos, categorías y pedidos mediante una arquitectura de microservicios. Los clientes podrán explorar el catálogo, agregar productos al carrito y generar un pedido que será enviado automáticamente a WhatsApp para finalizar la compra con el negocio.',
+
+  challenge:
+    'Diseñar una solución escalable basada en microservicios, desacoplando la autenticación, el catálogo de productos y la gestión de pedidos mediante Spring Cloud, API Gateway y bases de datos independientes por servicio.',
+
+  bestPractices: [
+    {
+      title: 'Arquitectura de Microservicios',
+      description:
+        'Separación de responsabilidades mediante servicios independientes con API Gateway, Eureka Server y Config Server.',
+    },
+    {
+      title: 'Diseño Orientado al Dominio',
+      description:
+        'Modelado del dominio antes de la implementación para garantizar una correcta separación entre negocio e infraestructura.',
+    },
+    {
+      title: 'API RESTful',
+      description:
+        'Diseño de endpoints siguiendo principios REST, utilizando DTOs, validaciones y manejo consistente de respuestas y errores.',
+    },
+    {
+      title: 'Autenticación con JWT',
+      description:
+        'Protección de los servicios mediante Spring Security y autenticación basada en JSON Web Tokens.',
+    },
+  ],
+
+  architectureImage: 'assets/aj-studio-architecture.png',
+
+  architectureCaption:
+    'Arquitectura basada en Spring Cloud con API Gateway, Eureka Server, Config Server y microservicios independientes para autenticación, catálogo y pedidos.',
+
+  videoUrl: '#',
+},
 ];
