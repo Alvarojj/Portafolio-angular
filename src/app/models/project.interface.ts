@@ -1,8 +1,3 @@
-export interface BestPractice {
-  title: string;
-  description: string;
-}
-
 export interface Project {
   id: string;
   title: string;
@@ -11,10 +6,5 @@ export interface Project {
   image?: string;
   viewUrl?: string;
   codeUrl: string;
-  detail: string;
-  challenge: string;
-  bestPractices: BestPractice[];
-  architectureImage?: string;
-  architectureCaption?: string;
-  videoUrl?: string;
+  category?: string;
 }

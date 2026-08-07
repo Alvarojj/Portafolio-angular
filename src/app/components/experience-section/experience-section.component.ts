@@ -1,5 +1,4 @@
 import { Component, input, ChangeDetectionStrategy } from '@angular/core';
-import { SectionTitleComponent } from '../section-title/section-title.component';
 import { ExperienceItemComponent } from '../experience-item/experience-item.component';
 import { Experience } from '../../models/experience.interface';
 
@@ -7,13 +6,17 @@ import { Experience } from '../../models/experience.interface';
   selector: 'app-experience-section',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [SectionTitleComponent, ExperienceItemComponent],
+  imports: [ExperienceItemComponent],
   template: `
-    <section class="pb-section-gap flex flex-col gap-margin-md" id="experience">
-      <app-section-title title="Experiencia Profesional" />
-      <div class="flex flex-col gap-12">
-        @for (exp of experiences(); track exp.id) {
-          <app-experience-item [experience]="exp" />
+    <section class="flex flex-col gap-lg" id="experience">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 pb-4 border-b border-outline-variant">
+        <h2 class="font-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">
+          Evolución Profesional
+        </h2>
+      </div>
+      <div class="flex flex-col">
+        @for (exp of experiences(); track exp.id; let isLast = $last) {
+          <app-experience-item [experience]="exp" [isLast]="isLast" />
         }
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { Component, input, ChangeDetectionStrategy } from '@angular/core';
-import { SectionTitleComponent } from '../section-title/section-title.component';
 import { TechIconComponent } from '../tech-icon/tech-icon.component';
 import { TechStackItem } from '../../models/tech-stack.interface';
 
@@ -7,11 +6,15 @@ import { TechStackItem } from '../../models/tech-stack.interface';
   selector: 'app-stack-section',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [SectionTitleComponent, TechIconComponent],
+  imports: [TechIconComponent],
   template: `
-    <section class="pb-section-gap flex flex-col gap-margin-md" id="stack">
-      <app-section-title title="Tecnologías principales" />
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-element-gap">
+    <section class="flex flex-col gap-lg pt-lg" id="stack">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 pb-4 border-b border-outline-variant">
+        <h2 class="font-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">
+          Stack Principal
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-md">
         @for (tech of techStack(); track tech.name) {
           <app-tech-icon [item]="tech" />
         }

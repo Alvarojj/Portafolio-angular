@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,25 +6,31 @@
 
 @layer components {
   .button-primary {
-    @apply bg-black dark:bg-white text-white dark:text-black px-6 py-3 border border-transparent transition-all duration-200;
+    @apply bg-primary text-on-primary px-6 py-3 border border-transparent transition-all duration-200;
   }
   .button-primary:hover {
-    @apply bg-white dark:bg-black text-black dark:text-white border-black dark:border-white;
+    @apply bg-transparent text-primary border-primary;
   }
   .button-secondary {
-    @apply bg-transparent dark:bg-transparent text-black dark:text-white border border-black dark:border-white px-6 py-3 transition-all duration-200;
+    @apply bg-transparent text-primary border border-outline px-6 py-3 transition-all duration-200;
   }
   .button-secondary:hover {
-    @apply bg-gray-100 dark:bg-gray-800;
+    @apply bg-surface-container-high;
   }
   .light-border {
-    @apply border-gray-200 dark:border-gray-700;
+    @apply border-outline-variant;
   }
   .light-text-muted {
-    @apply text-gray-500 dark:text-gray-400;
+    @apply text-on-surface-variant;
   }
   .light-bg-subtle {
-    @apply bg-gray-50 dark:bg-gray-900;
+    @apply bg-surface-container-low;
+  }
+  .monolith-border {
+    @apply border border-outline-variant;
+  }
+  .hero-gradient {
+    background: linear-gradient(90deg, rgba(5, 20, 36, 0.95) 0%, rgba(5, 20, 36, 0.55) 50%, rgba(5, 20, 36, 0.15) 100%);
   }
 }
 
@@ -39,5 +45,5 @@ body {
 
 input:focus,
 textarea:focus {
-  @apply border-black dark:border-white outline-none;
+  @apply border-primary outline-none;
 }
