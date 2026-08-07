@@ -5,8 +5,8 @@ import { Component, input, ChangeDetectionStrategy } from '@angular/core';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="border-b border-gray-200 dark:border-gray-700 pb-4 mb-4">
-      <h2 class="font-headline-md text-headline-md text-black dark:text-white">
+    <div class="border-b border-outline-variant pb-4 mb-4">
+      <h2 class="font-label-caps text-label-caps text-on-background uppercase">
         {{ title() }}
       </h2>
     </div>

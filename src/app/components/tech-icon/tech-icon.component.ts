@@ -6,14 +6,14 @@ import { TechStackItem } from '../../models/tech-stack.interface';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    'class': 'flex flex-col items-center justify-center p-8 border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 aspect-square cursor-default',
+    'class': 'flex flex-col items-center justify-center p-md border border-outline-variant bg-surface-container-low rounded-lg aspect-square cursor-default transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-lg hover:border-primary/60 hover:bg-surface-container-high group',
   },
   template: `
-    <span class="material-symbols-outlined text-4xl mb-4 text-gray-700 dark:text-gray-300"
+    <span class="material-symbols-outlined text-4xl mb-4 text-on-surface-variant transition-colors duration-300 group-hover:text-primary"
           style="font-variation-settings: 'FILL' 0;">
       {{ item().icon }}
     </span>
-    <span class="font-label-mono text-label-mono font-bold text-black dark:text-white text-center">
+    <span class="font-mono-data text-mono-data font-bold text-on-background text-center transition-colors duration-300 group-hover:text-primary">
       {{ item().label }}
     </span>
   `,
